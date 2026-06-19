@@ -1,0 +1,17 @@
+:root {
+    --bg-dark: #06060d;
+    --blue-electric: #00bfff;
+    --blue-glow: #0088cc;
+    --purple: #8b5cf6;
+    --cyan: #00e5ff;
+    --red-team: #ff3355;
+    --blue-team: #3399ff;
+    --green-health: #00ff88;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0b0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #020208; font-family: 'Segoe UI', 'Courier New', monospace; }
+#game-container { position: relative; width: 100vw; height: 100vh; }
+canvas { display: block; width: 100%; height: 100%; image-rendering: auto; touch-action: none; }
+.hidden { display: none !important; pointer-events: none !important; }

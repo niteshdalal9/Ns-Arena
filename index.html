@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NS Arena 2.0 | NS SYSTEMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/game.css">
+
+    <script src="js/core/game.js"></script>
+    <script src="js/core/renderer.js"></script>
+    <script src="js/core/input.js"></script>
+    <script src="js/core/mobileControls.js"></script>
+    <script src="js/core/audio.js"></script>
+
+    <script src="js/entities/player.js"></script>
+    <script src="js/entities/bot.js"></script>
+    <script src="js/entities/healthkit.js"></script>
+
+    <script src="js/systems/combat.js"></script>
+    <script src="js/systems/collision.js"></script>
+    <script src="js/systems/spawn.js"></script>
+    <script src="js/systems/ai.js"></script>
+
+    <script src="js/ui/login.js"></script>
+    <script src="js/ui/loading.js"></script>
+    <script src="js/ui/menu.js"></script>
+    <script src="js/ui/hud.js"></script>
+    <script src="js/ui/victory.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+
+        <!-- Login Form -->
+        <div id="login-form" class="hidden">
+            <h2>NS ARENA 2.0</h2>
+            <input type="text" id="login-username" class="login-field" placeholder="Username" autocomplete="off">
+            <input type="password" id="login-password" class="login-field" placeholder="Password" autocomplete="off">
+            <button class="login-btn" id="btn-login">LOGIN</button>
+            <button class="login-btn" id="btn-register">REGISTER</button>
+            <button class="login-btn" id="btn-guest">PLAY AS GUEST</button>
+            <div id="login-message"></div>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div id="mobile-overlay" class="hidden">
+            <div id="joystick-zone">
+                <div id="joystick-base"><div id="joystick-thumb"></div></div>
+            </div>
+            <div id="action-buttons">
+                <div id="fire-joystick-zone">
+                    <div id="fire-joystick-base"><div id="fire-joystick-thumb"></div></div>
+                </div>
+                <button class="action-btn dash-btn" id="btn-dash">⚡</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
